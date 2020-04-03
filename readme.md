@@ -14,6 +14,7 @@ Navigate to index.html file through your file interface.
 Right click and open in the browser of your choice.
 
 ## Spec
+
  | Spec  | Input | Output  
  |---|---|---|---|---|
  |  Program returns a rage of numbers from 0 to the users inputted numbers |5   | 0,1,2,3,4,5  |   |   |
