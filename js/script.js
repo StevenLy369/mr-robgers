@@ -1,53 +1,36 @@
+function count(input) {
+  var inputs = [];
+  var one = "1";
+  var two = "2";
+  var three = "3";
+  var finalString = [];
 
-$(document).ready(function(){
-    var one = "1";
-    var two = "2";
-    var three = "3";
-    var count=[];
-    var finalString=[];
+  for (i = 0; i <= input; i++) {
+    var inputString = i.toString();
+    var finalString = inputString.split("");
+    inputs.push(finalString);
+  }
+  inputs.forEach(function(finalString) {
+    var index = inputs.indexOf(finalString);
+    if (finalString.includes(three)) {
+      inputs[index] = "Won't you be my neighbor?";
+    } else if (finalString.includes(two)) {
+      inputs[index] = "Boop!";
+    } else if (finalString.includes(one)) {
+      inputs[index] = "Beep";
+    } else {
+      inputs[index] = finalString.join("");
+    }
+  });
+  return inputs;
+}
 
-
-    $("#form").submit(function(event){
-        event.preventDefault();
-        var input = ($("#input").val());
-        var finalString=[];
-        countString = count.toString();
-        countSplit = countString.split("");
-        
-        
-
-
-        for (i = 0; i <= input; i++){
-          count.push(i)
-        }
-        
-
-       count.forEach(function(number){
-           if (three.includes(number)){
-               number = "Wont you be my neighbor?";
-               finalString.push(number);
-           }else if (two.includes(number)){
-               number ="Boop";
-               finalString.push(number);
-           }else if (one.includes(number)){
-               number="Beep"
-               finalString.push(number);
-           }
-           else {
-            finalString.push(number);
-
-           }
-       })
-       
-        console.log(finalString);
-        
-        
-        
-    
-
-    })
- 
-
-
-
-})
+$(document).ready(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    var input = parseInt($("#input").val());
+    var result = count(input);
+    console.log(result);
+    $("#result").text(result);
+  });
+});
