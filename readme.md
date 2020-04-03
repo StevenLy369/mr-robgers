@@ -14,7 +14,7 @@ Navigate to index.html file through your file interface.
 Right click and open in the browser of your choice.
 
 ## Spec
-Spec
+Spec:
 
  | Spec  | Input | Output  
  |---|---|---|---|---|
