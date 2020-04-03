@@ -17,7 +17,7 @@ Right click and open in the browser of your choice.
 Spec:
 
  | Spec  | Input | Output  
- |---|---|---|---|---|
+ |---|---|---|
  |  Program returns a rage of numbers from 0 to the users inputted numbers |5   | 0,1,2,3,4,5  |
  | Create an array and split the array using split("")  | 5  | ["0","1","2","3","4","5"]  |   |   |
  |  Create Logic where 3="Won't you be my neighbor", 2="boop!" 1="beep" in that order of importance | 5  |"0","Beep","Boop","Won't you be my neighbor"   |
